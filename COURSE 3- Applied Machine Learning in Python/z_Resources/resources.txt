@@ -1,0 +1,4 @@
+cloud sourcing platform-
+  amazon mechanical turk,
+  crowd flower,
+scikit learn user guide and api documentation

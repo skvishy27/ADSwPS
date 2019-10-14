@@ -1,0 +1,36 @@
+1. Question 1
+After training a ridge regression model, you find that the training and test set accuracies are 0.98 and 0.54 respectively. Which of the following would be the best choice for the next ridge regression model you train?
+a.You are overfitting, the next model trained should have a lower value for alpha
+b.You are overfitting, the next model trained should have a higher value for alpha-a
+c.You are underfitting, the next model trained should have a lower value for alpha
+d.You are underfitting, the next model trained should have a higher value for alpha
+
+2. Question 2
+After training a Radial Basis Function (RBF) kernel SVM, you decide to increase the influence of each training point and to simplify the decision surface. Which of the following would be the best choice for the next RBF SVM you train?
+a.Decrease C and gamma-a
+b.Increase C and gamma
+c.Increase C, decrease gamma
+d.Decrease C, increase gamma
+
+3. Question 3
+Which of the following is an example of multiclass classification? (Select all that apply)
+a.Classify a set of fruits as apples, oranges, bananas, or lemons-a
+b.Predict whether an article is relevant to one or more topics (e.g. sports, politics, finance, science)
+c.Predicting both the rating and profit of soon to be released movie
+d.Classify a voice recording as an authorized user or not an authorized user.
+
+5. Question 5
+Suppose you are interested in finding a parsimonious model (the model that accomplishes the desired level of prediction with as few predictor variables as possible) to predict housing prices. Which of the following would be the best choice?
+a.Lasso Regression
+b.Logistic Regression
+c.Ordinary Least Squares Regression
+d.Ridge Regression-a
+
+11. Question 11
+Which of the following is true of cross-validation? (Select all that apply)
+a.Increases generalization ability and computational complexity-a
+b.Removes need for training and test sets
+c.Fits multiple models on different splits of the data-a
+d.Helps prevent knowledge about the test set from leaking into the model-a
+e.Increases generalization ability and reduces computational complexity
+

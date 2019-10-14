@@ -1,0 +1,2 @@
+link 1 - https://www.kaggle.com/mathijs/weather-data-in-new-york-city-2016
+link 2 - https://www.kaggle.com/migeruj/weather-seattle-20052017

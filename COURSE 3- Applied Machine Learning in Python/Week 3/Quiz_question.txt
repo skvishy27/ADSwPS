@@ -1,0 +1,113 @@
+1.A supervised learning model has been built to predict whether someone is infected with a new strain of a virus. The probability of any one person having the virus is 1%. Using accuracy as a metric, what would be a good choice for a baseline accuracy score that the new model would want to outperform?
+a- 
+
+2.Given the following confusion matrix:
+
+                    Predicted Positive	Predicted Negative
+Condition Positive	96	                4
+Condition Negative	8			19
+Compute the accuracy to three decimal places.
+a-0.905
+
+3.Given the following confusion matrix:
+
+                    Predicted Positive	Predicted Negative
+Condition Positive	96			4
+Condition Negative	 8			19
+Compute the precision to three decimal places.
+a-0.923
+
+4.Given the following confusion matrix:
+
+                    Predicted Positive	Predicted Negative
+Condition Positive	96			4
+Condition Negative	 8			19
+Compute the recall to three decimal places.
+a-0.960
+
+5.Using the fitted model `m` create a precision-recall curve to answer the following question:
+
+For the fitted model `m`, approximately what precision can we expect for a recall of 0.8?
+
+(Use y_test and X_test to compute the precision-recall curve. If you wish to view a plot, you can use `plt.show()` )
+a-print(m)
+y_decision = m.decision_function(X_test)
+precision, recall, _ = precision_recall_curve(y_test, y_decision)
+plt.plot(recall, precision)
+plt.show()
+0.6
+
+6.a
+7.e
+
+
+8.Using the fitted model `m` what is the micro precision score?
+
+(Use y_test and X_test to compute the precision score.)
+a-print(m)
+svm_predicted_mc = m.predict(X_test)
+print(precision_score(y_test,svm_predicted_mc, average ='micro'))
+
+'''help(precision_score)'''
+0.744
+
+
+9. Question 9
+Which of the following is true of the R-Squared metric? (Select all that apply)
+a.A model that always predicts the mean of y would get a score of 0.0-a
+b.The worst possible score is 0.0-a
+c.A model that always predicts the mean of y would get a negative score
+d.The best possible score is 1.0-a
+
+10. Question 10
+In a future society, a machine is used to predict a crime before it occurs. If you were responsible for tuning this machine, what evaluation metric would you want to maximize to ensure no innocent people (people not about to commit a crime) are imprisoned (where crime is the positive label)?
+a.Accuracy
+b.Precision-a
+c.Recall
+d.F1
+e.AUC
+
+11. Question 11
+Consider the machine from the previous question. If you were responsible for tuning this machine, what evaluation metric would you want to maximize to ensure all criminals (people about to commit a crime) are imprisoned (where crime is the positive label)?
+a.Accuracy
+b.Precision
+c.Recall-a
+d.F1
+e.AUC
+
+12. Question 12
+A classifier is trained on an imbalanced multiclass dataset. After looking at the model’s precision scores, you find that the micro averaging is much smaller than the macro averaging score. Which of the following is most likely happening?
+a.The model is probably misclassifying the frequent labels more than the infrequent labels.-a
+b.The model is probably misclassifying the infrequent labels more than the frequent labels.
+
+13. Question 13
+Using the already defined RBF SVC model `m`, run a grid search on the parameters C and gamma, for values [0.01, 0.1, 1, 10]. The grid search should find the model that best optimizes for recall. How much better is the recall of this model than the precision? (Compute recall - precision to 3 decimal places)
+
+(Use y_test and X_test to compute precision and recall.)
+a-print(m)
+c_value = [0.01,0.1,1,10]
+gamma_values = [0.01,0.1,1,10]
+param_grid = {'C':c_value,'gamma':gamma_values}
+grid_search = GridSearchCV(m, param_grid, scoring = 'recall')
+grid_search.fit(X_train, y_train) 
+recall_predicted = grid_search.best_estimator_.predict(X_test)
+print(recall_score(y_test, recall_predicted))
+print(precision_score(y_test, recall_predicted))
+0.52
+
+
+14. Question 14
+Using the already defined RBF SVC model `m`, run a grid search on the parameters C and gamma, for values [0.01, 0.1, 1, 10]. The grid search should find the model that best optimizes for precision. How much better is the precision of this model than the recall? (Compute precision - recall to 3 decimal places)
+
+(Use y_test and X_test to compute precision and recall.)
+a-print(m)
+c_value = [0.01,0.1,1,10]
+gamma_values = [0.01,0.1,1,10]
+param_grid = {'C':c_value,'gamma':gamma_values}
+grid_search = GridSearchCV(m, param_grid, scoring = 'precision')
+grid_search.fit(X_train, y_train) 
+precision_predicted = grid_search.best_estimator_.predict(X_test)
+print(precision_score(y_test, precision_predicted))
+print(recall_score(y_test, precision_predicted))
+0.15
+

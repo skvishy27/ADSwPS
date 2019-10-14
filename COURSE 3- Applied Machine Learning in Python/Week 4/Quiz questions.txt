@@ -1,0 +1,62 @@
+1.Which of the following is an example of clustering?
+a.Compress elongated clouds of data into more spherical representations
+b.Separate the data into distinct groups by similarity-a
+c.Accumulate data into groups based on labels
+d.Creating a new representation of the data with fewer features
+
+Question 2
+Which of the following are advantages to using decision trees over other models? (Select all that apply)
+a.Decision trees can learn complex statistical models using a variety of kernel functions
+b.Trees are naturally resistant to overfitting
+c.Trees are easy to interpret and visualize-a
+d.Trees often require less preprocessing of data-a
+
+3.What is the main reason that each tree of a random forest only looks at a random subset of the features when building each node?
+a.To reduce the computational complexity associated with training each of the trees needed for the random forest.
+b.To learn which features are not strong predictors
+c.To increase interpretability of the model
+d.To improve generalization by reducing correlation among the trees and making the model more robust to bias.-a
+
+
+4.Which of the following supervised machine learning methods are greatly affected by feature scaling? (Select all that apply)
+a.Neural Networks-a
+b.Decision Trees
+c.Support Vector Machines-a
+d.Naive Bayes
+e.KNN-a
+
+Question 5
+Select which of the following statements are true.
+a.For predicting future sales of a clothing line, Linear regression would be a better choice than a decision tree regressor.-a
+b.For having an audience interpret the fitted model, a support vector machine would be a better choice than a decision tree.
+c.For a model that won’t overfit a training set, Naive Bayes would be a better choice than a decision tree.-a
+d.For a fitted model that doesn’t take up a lot of memory, KNN would be a better choice than logistic regression.
+
+Question 6
+a-{n,k,d}
+
+7.
+
+
+8.For the autograded assignment in this module, you will create a classifier to predict whether a given blight ticket will be paid on time (See the module 4 assignment notebook for a more detailed description). Which of the following features should be removed from the training of the model to prevent data leakage? (Select all that apply)
+a.collection_status - Flag for payments in collections-a
+b.ticket_issued_date - Date and time the ticket was issued
+c.grafitti_status - Flag for graffiti violations
+d.compliance_detail - More information on why each ticket was marked compliant or non-compliant-a
+e.agency_name - Agency that issued the ticket
+
+
+Question 9
+Which of the following might be good ways to help prevent a data leakage situation?
+a.If time is a factor, remove any data related to the event of interest that doesn’t take place prior to the event.
+b.Ensure that data is preprocessed outside of any cross validation folds.
+c.Remove variables that a model in production wouldn’t have access to
+d.Sanity check the model with an unseen validation set
+{{b,c},d,{a,b,c,d},}
+
+Question 10
+Given the neural network below, find the correct outputs for the given values of x1 and x2.
+
+The neurons that are shaded have an activation threshold, e.g. the neuron with >1? will be activated and output 1 if the input is greater than 1 and will output 0 otherwise.
+b
+
